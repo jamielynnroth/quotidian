@@ -1,0 +1,180 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+ p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, header, details, figcaption, figure, 
+footer, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	background-image: url("retro_intro.png");
+}
+
+
+ol, ul {list-style: none;
+}
+
+blockquote, q {quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* -------------------------------------------------------------*/
+
+.wrapper {
+	height: 100%;
+	margin:0;
+	padding: 0;
+	min-width: 1000px;
+	background: url("pattern.png");
+}
+.container {
+	position: relative;
+}
+.nav{
+	position: fixed;
+	width: 100%;
+	height: 256px;
+	padding-top: 10px;
+	background: white;
+	top: 0;
+}
+
+.left {
+	position: relative;
+	float: left;
+	width: 30%;
+	display: block;
+	width: 400px;
+	padding-top: 31px;
+	padding-left: 20px;
+}
+
+.left ul {
+	margin-left: 120px;
+	padding: 10px 0;
+}
+
+.left ul li {
+	padding: 10px 10px 0 0;
+	display: inline;
+	margin:0;
+}
+
+.left ul li img {
+	height: 20px;
+}
+
+.left h2 {
+	margin-left: 70px;
+	font-size: 18px; 
+	font-style: italic;
+	color: gray;
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+
+.left p {
+	margin-left: 70px;
+	color: gray;
+	font-size: 13px;
+	font-family: sans-serif;
+	font-style: italic;
+	padding: 3px 0;
+}
+
+#logo {
+	width: 140px;
+	position:relative;
+	margin-left: auto;
+	margin-right:auto;
+}
+
+#logo img {
+	width: 100%;
+}
+
+.right {
+	position:relative;
+	float: right;
+	width: 400px;
+}
+
+.right ul li {
+	display: inline;
+	padding: 10px 15px 10px;
+	display: relative;
+	color: gray;
+	font-family: sans-serif;
+	font-size: 14px;
+}
+
+.right ul {
+	list-style:none;
+	margin-top: -146px;
+}
+
+.content {
+	margin-top: 330px;
+	
+}
+
+#nav_guide {
+	width: 895px;
+	/*height: 79px;*/
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: -50px;
+}
+
+#skyline {
+	background: url("skyline-crop.png");
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 300px;
+}
+
+#about h1 {
+	font-size: 25px;
+	background: gray;
+	color:white;
+	padding: 1px;
+/*	background-size: 110%;*/
+	position:relative;
+	display:inline;
+	width: 100px;
+	line-height: 100%;
+	text-transform: uppercase;
+	text-align: center;
+}
