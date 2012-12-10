@@ -28,10 +28,6 @@ footer, hgroup, menu, nav, section {
 	display: block;
 }
 
-body {
-	background-image: url("retro_intro.png");
-}
-
 
 ol, ul {list-style: none;
 }
@@ -55,19 +51,42 @@ table {
 	height: 100%;
 	margin:0;
 	padding: 0;
-	min-width: 1000px;
-	background: url("pattern.png");
+	min-width: 1080px;
+	position:relative;
 }
+
+html {
+	background: url("pattern.png")no-repeat;
+	background-size: 1350px;
+	background-attachment: fixed;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+}
+
+/*body {	
+	background: url("skyline-crop.png");
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 300px;
+	z-index:0;
+}*/
+
+
 .container {
 	position: relative;
+	width: 1080px;
+	height:200px;
 }
 .nav{
 	position: fixed;
 	width: 100%;
-	height: 256px;
+	height:200px;
 	padding-top: 10px;
 	background: white;
 	top: 0;
+	z-index:1;
+	margin-bottom: 20px;
 }
 
 .left {
@@ -77,11 +96,12 @@ table {
 	display: block;
 	width: 400px;
 	padding-top: 31px;
-	padding-left: 20px;
+	padding-left: 41px; /*This should be equal to margin-left on .right nav for balance */
 }
 
 .left ul {
-	margin-left: 120px;
+	margin-left: 264px;
+	margin-top: -57px;
 	padding: 10px 0;
 }
 
@@ -96,7 +116,7 @@ table {
 }
 
 .left h2 {
-	margin-left: 70px;
+	margin-left: 46px;
 	font-size: 18px; 
 	font-style: italic;
 	color: gray;
@@ -105,7 +125,7 @@ table {
 }
 
 .left p {
-	margin-left: 70px;
+	margin-left: 45px;
 	color: gray;
 	font-size: 13px;
 	font-family: sans-serif;
@@ -114,7 +134,7 @@ table {
 }
 
 #logo {
-	width: 140px;
+	width: 135px;
 	position:relative;
 	margin-left: auto;
 	margin-right:auto;
@@ -132,49 +152,140 @@ table {
 
 .right ul li {
 	display: inline;
-	padding: 10px 15px 10px;
+	padding: 10px 8px 10px;
 	display: relative;
 	color: gray;
 	font-family: sans-serif;
 	font-size: 14px;
+/*	border-right: 2px solid gray;*/	
+	line-height: 10px;
+	margin:0;
 }
 
 .right ul {
 	list-style:none;
-	margin-top: -146px;
+	margin-top: -140px;
+	margin-left: -41px;
+}
+
+
+
+#nav_guide {
+	background: url("nav_guide.png") no-repeat;
+	width: 895px;
+	height: 97px;
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: -46px;
+	z-index: 10;
+	/*position:fixed;*/
+
 }
 
 .content {
 	margin-top: 330px;
+	z-index: -1;
+	width: 650px;
+	margin-left: 215px;
+	margin-right: 215px;
+	height: 100%;
 	
 }
 
-#nav_guide {
-	width: 895px;
-	/*height: 79px;*/
-	display:block;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: -50px;
+hr {
+	width: 250px;
+	height: 5px;
+	color: gray;
+	background-color: gray;
 }
 
-#skyline {
+#about {
+	width: 650px;
+	position:absolute;
+	margin-top: -40px;
+	/*margin-left: 180px;*/
+}
+
+#about h1 {
+	width: 127px;
+}
+
+#about img {
+	width: 1080px;
+	margin-left: -215px;
+	margin-top: 10px;
+}
+
+#portfolio {
+	position:absolute;
+	width: 650px;
+	margin-top: 300px;
+}
+
+#portfolio h1 {
+	width: 210px;
+}
+
+.lineright  {
+	float: right;
+	margin-top: -29px;
+	margin-bottom: 20px;
+}
+
+.lineleft {
+	float: left;
+	margin-top: -29px;
+	margin-bottom: 20px;
+} 
+
+#caption {
+	width: 593px;
+	line-height: 20px;
+	height: 20px;
+	font-family: sans-serif;
+	font-size: 14px;
+	color: gray;
+	background-color: white;
+	opacity: 0.8;
+	/*position:absolute;*/
+	margin-top: -44px;
+	margin-left: auto;
+	margin-right: auto;
+	z-index: 30;
+	padding: 10px;
+}
+
+.more {
+	margin-top: 27px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#about .more h1 {
+/*	margin-top: 10px;*/
+	width: 68px;
+	padding: 3px;
+}
+
+/*#skyline {
 	background: url("skyline-crop.png");
 	background-repeat: no-repeat;
 	width: 100%;
 	height: 300px;
-}
+}*/
 
-#about h1 {
+ h1 {
+	text-align: center;
 	font-size: 25px;
 	background: gray;
 	color:white;
 	padding: 1px;
-/*	background-size: 110%;*/
+	/*background-size: 110%;*/
 	position:relative;
-	display:inline;
-	width: 100px;
+	/*width: 100px;*/
 	line-height: 100%;
-	text-transform: uppercase;
-	text-align: center;
+	/*text-transform: uppercase;*/
+	margin-left: auto;
+	margin-right:auto;
 }
