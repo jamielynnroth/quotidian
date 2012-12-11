@@ -47,17 +47,37 @@ table {
 
 /* -------------------------------------------------------------*/
 
+
+/*--------------------------- FONTS---------------------------------*/
+
+ h1 {
+	text-align: center;
+	font-size: 25px;
+	background: gray;
+	color:white;
+	padding: 1px;
+	/*background-size: 110%;*/
+	position:relative;
+	/*width: 100px;*/
+	line-height: 100%;
+	/*text-transform: uppercase;*/
+	margin-left: auto;
+	margin-right:auto;
+}
+
+/**************************** GLOBAL **************************************/
+
 .wrapper {
 	height: 100%;
 	margin:0;
 	padding: 0;
-	min-width: 1080px;
+	min-width: 1020px;
 	position:relative;
 }
 
 html {
-	background: url("pattern.png")no-repeat;
-	background-size: 1350px;
+	background: url("pattern-1-18per.png")repeat;
+/*	background-size: 1350px;*/
 	background-attachment: fixed;
 	z-index: -1;
 	width: 100%;
@@ -72,21 +92,28 @@ html {
 	z-index:0;
 }*/
 
+.lineright, .lineleft {
+	height: 5px;
+	background-color: gray;
 
-.container {
+}
+
+/***************************************** NAV *******************************************/
+/*.container {
 	position: relative;
 	width: 1080px;
 	height:200px;
-}
+}*/
 .nav{
 	position: fixed;
 	width: 100%;
-	height:200px;
+	height:161px;
 	padding-top: 10px;
 	background: white;
 	top: 0;
 	z-index:1;
 	margin-bottom: 20px;
+	min-width: 1020px;
 }
 
 .left {
@@ -95,13 +122,14 @@ html {
 	width: 30%;
 	display: block;
 	width: 400px;
+	height: 200px;
 	padding-top: 31px;
 	padding-left: 41px; /*This should be equal to margin-left on .right nav for balance */
 }
 
 .left ul {
 	margin-left: 264px;
-	margin-top: -57px;
+	margin-top: -15px;
 	padding: 10px 0;
 }
 
@@ -147,6 +175,7 @@ html {
 .right {
 	position:relative;
 	float: right;
+	height: 200px;
 	width: 400px;
 }
 
@@ -171,75 +200,117 @@ html {
 
 
 #nav_guide {
-	background: url("nav_guide.png") no-repeat;
-	width: 895px;
+	background: url("header-zig-zag.png") no-repeat;
+	width: 742px;
 	height: 97px;
 	display:block;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: -46px;
+	margin-top: -41px;
 	z-index: 10;
 	/*position:fixed;*/
 
 }
 
+/************************************* CONTENT ****************************************/
+
 .content {
-	margin-top: 330px;
+/*	margin-top: 300px;*/
 	z-index: -1;
 	width: 650px;
-	margin-left: 215px;
-	margin-right: 215px;
+	margin-left: auto;
+	margin-right: auto;
 	height: 100%;
 	
 }
 
-hr {
+.content hr {
 	width: 250px;
 	height: 5px;
 	color: gray;
 	background-color: gray;
 }
 
-#about {
+/************************************* ABOUT ****************************************/
+#aboutcontent {
+	margin-top: 300px;
+	margin-left: auto;
+	margin-right:auto;
 	width: 650px;
-	position:absolute;
-	margin-top: -40px;
-	/*margin-left: 180px;*/
+	position:relative;
 }
 
-#about h1 {
+#aboutcontent .lineright  {
+	float: right;
+	margin-top: -34px;
+	margin-bottom: 20px;
+	width: 250px;
+}
+
+#aboutcontent .lineleft {
+	float: left;
+	margin-top: -34px;
+	margin-bottom: 20px;
+	width: 250px;
+} 
+
+
+/*/*
+.about {
+	width: 650px;*/
+	/*position:relative;
+	margin-top: -40px;
+	margin-left: 180px;*/
+/*/*/
+
+#aboutcontent h1 {
 	width: 127px;
 }
 
-#about img {
-	width: 1080px;
-	margin-left: -215px;
+#skyline {
+	position:relative;
+	text-align: center;
+}
+
+#skyline img {
+	width: 1020px;
+	margin-left: auto;
+	margin-right: auto;
 	margin-top: 10px;
 }
 
+/************************************* PORTFOLIO ****************************************/
+
 #portfolio {
-	position:absolute;
+	position:relative;
 	width: 650px;
-	margin-top: 300px;
+	margin-top: 0;
 }
 
 #portfolio h1 {
 	width: 210px;
 }
 
-.lineright  {
+#portfolio .lineright  {
 	float: right;
-	margin-top: -29px;
+	margin-top: -32px;
 	margin-bottom: 20px;
+	width: 210px;
 }
 
-.lineleft {
+#portfolio .lineleft {
 	float: left;
-	margin-top: -29px;
+	margin-top: -32px;
 	margin-bottom: 20px;
+	width: 210px;
 } 
-
+/*
 #caption {
+	margin-right: auto;
+	margin-left:auto;
+}*/
+
+#caption p {
 	width: 593px;
 	line-height: 20px;
 	height: 20px;
@@ -249,24 +320,30 @@ hr {
 	background-color: white;
 	opacity: 0.8;
 	/*position:absolute;*/
-	margin-top: -44px;
+	margin-top: -61px;
 	margin-left: auto;
 	margin-right: auto;
 	z-index: 30;
 	padding: 10px;
 }
 
-.more {
-	margin-top: 27px;
+.content .more {
+	margin-top: 20px;
 	margin-left:auto;
 	margin-right:auto;
+	width: 68px;
+
 }
 
-#about .more h1 {
+.content .more h1 {
 /*	margin-top: 10px;*/
 	width: 68px;
 	padding: 3px;
 }
+/*
+#overlay {
+	z-index: 100;
+}*/
 
 /*#skyline {
 	background: url("skyline-crop.png");
@@ -275,17 +352,121 @@ hr {
 	height: 300px;
 }*/
 
- h1 {
-	text-align: center;
-	font-size: 25px;
-	background: gray;
-	color:white;
-	padding: 1px;
-	/*background-size: 110%;*/
-	position:relative;
-	/*width: 100px;*/
-	line-height: 100%;
-	/*text-transform: uppercase;*/
-	margin-left: auto;
+/********************************** PORTFOLIO ***************************************/
+
+#portfolio img {
+	width: 650px;
+}
+
+/********************************** BLOG ***************************************/
+
+#blog h1 {
+	width: 213px;
+}
+
+#blog .lineleft {
+	float: left;
+	margin-top: -32px;
+	margin-bottom: 20px;
+	width: 210px;
+}
+
+#blog .lineright {
+	float: right;
+	margin-top: -32px;
+	margin-bottom: 20px;
+	width: 210px;
+}
+#blog h3 {
+	margin-top: 0;
+	margin-bottom: 5px;
+}
+
+#blog h4 {
+	font-size: 10px;
+	margin: 0;
+	font-style: italic;
+	padding: 5px;
+}
+#blog p {
+	font-size: 14px;
+	margin-left:0;
+}
+
+#blog img {
+	width: 300px;
+	float: left;
+}
+
+#truncated_post {
+	width: 325px;
+	font-family: sans-serif;
+	color: gray;
+	text-align: left;
+	float: left;
+	margin-left: 20px;
+}
+/*
+#blog .more h1 {
+	width: 68px;
+	padding: 3px;
+}*/
+
+/* .more {
+	margin-top: 10px;
+	width: 68px;
+	padding: 3px;
+}*/
+
+#blog .more {
+	margin-top: 0;
+	margin-left:auto;
 	margin-right:auto;
 }
+
+#blog .more h1 {
+/*	margin-top: 10px;*/
+	width: 68px;
+	padding: 3px;
+	height: 29px;
+	margin-top: 263px;
+	position: relative;
+}
+
+#blog a {
+	text-decoration: none;
+	color:gray;
+	font-size: 10px;
+	font-family: sans-serif;
+	font-style: italic;
+}
+/* ******************************** TWITTER BAR ***********************************/
+
+.twitterbar {
+	height: 50px;
+	line-height: 50px;
+	padding-bottom: 20px;
+}
+
+.twitterbar img, h5, p{
+	float:left;
+	margin:5px;
+}
+
+.twitterbar h5 {
+	font-family: sans-serif;
+	color:gray;
+	font-size: 12px;
+	font-style: italic;
+}
+
+.twitterbar p {
+	font-family: sans-serif;
+	font-size: 13px;
+	color:gray;
+}
+
+.twitterbar hr {
+	width: 650px;
+}
+
